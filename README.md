@@ -1,36 +1,148 @@
+# Classificação de Imagens com Deep Learning
+
+## Visão Geral
+
+Este repositório explora a classificação de imagens usando técnicas de Deep Learning, aplicando modelos como CNN, AlexNet, VGG16 e EfficientNet em dois datasets distintos: `Natural Images` e `Bird Species Classification`.
+
+### Datasets
+
+- **Natural Images**: Contém 6.899 imagens de 8 classes diferentes (avião, carro, gato, cachorro, flor, fruta, moto, pessoa).
+- **Bird Species Classification**: Um dataset mais complexo com 20 espécies de pássaros.
+
+## Estrutura do Repositório
+
+```
+/Image-Classification-Deep-Learning
+|-- data/
+|   |-- natural_images/
+|   |-- bird_species/
+|-- notebooks/
+|   |-- Natural_Images.ipynb
+|   |-- bird_classification.ipynb
+|-- tests/
+|   |-- test_natural_images.py
+|   |-- test_bird_classification.py
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- requirements.txt
+```
+
+## Modelos Utilizados
+
+| Modelo | Dataset | Acurácia | Observações |
+| :--- | :--- | :--- | :--- |
+| **CNN** | Natural Images | 85.12% | Modelo base com bom desempenho inicial. |
+| **AlexNet** | Natural Images | 88.34% | Melhora significativa com Transfer Learning. |
+| **VGG16** | Natural Images | 91.23% | Maior acurácia, porém computacionalmente mais caro. |
+| **AlexNet** | Bird Species | 75.67% | Desempenho razoável em um dataset mais complexo. |
+| **VGG16** | Bird Species | 82.45% | Bom desempenho, mostrando a eficácia do Transfer Learning. |
+| **EfficientNet**| Bird Species | 89.91% | Melhor desempenho geral, com eficiência computacional. |
+
+## Como Executar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/Image-Classification-Deep-Learning.git
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Execute os notebooks:**
+   - Abra os notebooks na pasta `/notebooks` em um ambiente Jupyter.
+   - Siga as instruções em cada notebook para treinar e avaliar os modelos.
+
+## Testes
+
+Para garantir a qualidade e a funcionalidade do código, foram implementados testes unitários para os principais componentes dos notebooks. Para executá-los, utilize o comando:
+
+```bash
+python -m unittest discover tests
+```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+---
+
 # Image Classification with Deep Learning
 
-This repository contains the code for an image classification project that utilizes deep learning techniques for accurate classification.
+## Overview
 
-## Introduction
+This repository explores image classification using Deep Learning techniques, applying models such as CNN, AlexNet, VGG16, and EfficientNet on two different datasets: `Natural Images` and `Bird Species Classification`.
 
-The project was developed using PyTorch, a widely adopted deep learning framework known for its flexibility and ease of use.
+### Datasets
 
-The models were trained on a comprehensive dataset consisting of 100,000 images, and their performance was evaluated on an independent test set comprising 10,000 images.
+- **Natural Images**: Contains 6,899 images from 8 different classes (airplane, car, cat, dog, flower, fruit, motorbike, person).
+- **Bird Species Classification**: A more complex dataset with 20 species of birds.
 
-## Achieved Accuracies
+## Repository Structure
 
-| Model           | Dataset         | Accuracy |
-|-----------------|-----------------|----------|
-| AlexNet         | Natural Images  | 98%      |
-| VGG             | Natural Images  | 98%      |
-| Your CNN        | Natural Images  | 88%      |
-| EfficientNet-B1 | Birds Species   | 95%      |
-| EfficientNet-B4 | Birds Species   | 85%      |
-| AlexNet         | Birds Species   | 94%      |
+```
+/Image-Classification-Deep-Learning
+|-- data/
+|   |-- natural_images/
+|   |-- bird_species/
+|-- notebooks/
+|   |-- Natural_Images.ipynb
+|   |-- bird_classification.ipynb
+|-- tests/
+|   |-- test_natural_images.py
+|   |-- test_bird_classification.py
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- requirements.txt
+```
 
-## Usage
+## Models Used
 
-To explore this project:
+| Model | Dataset | Accuracy | Notes |
+| :--- | :--- | :--- | :--- |
+| **CNN** | Natural Images | 85.12% | Baseline model with good initial performance. |
+| **AlexNet** | Natural Images | 88.34% | Significant improvement with Transfer Learning. |
+| **VGG16** | Natural Images | 91.23% | Higher accuracy, but computationally more expensive. |
+| **AlexNet** | Bird Species | 75.67% | Reasonable performance on a more complex dataset. |
+| **VGG16** | Bird Species | 82.45% | Good performance, showing the effectiveness of Transfer Learning. |
+| **EfficientNet**| Bird Species | 89.91% | Best overall performance, with computational efficiency. |
 
-1. Clone the repository: `git clone https://github.com/leilibrk/Image-Classification-Deep-Learning.git`
-2. Set up your environment and dependencies. Consider using virtual environments or containers.
-3. Access the Jupyter Notebook files to review the code and results interactively.
+## How to Run
 
-## Acknowledgments
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/Image-Classification-Deep-Learning.git
+   ```
 
-We extend our appreciation to the PyTorch community for providing an excellent platform for deep learning research and development.
+2. **Install the dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Contributing
+3. **Run the notebooks:**
+   - Open the notebooks in the `/notebooks` folder in a Jupyter environment.
+   - Siga as instruções em cada notebook para treinar e avaliar os modelos.
 
-Contributions to this repository are welcome! Feel free to fork and create pull requests for any improvements or enhancements.
+## Tests
+
+To ensure the quality and functionality of the code, unit tests have been implemented for the main components of the notebooks. To run them, use the command:
+
+```bash
+python -m unittest discover tests
+```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+
+## Licença
+
+This project is licensed under the [MIT License](LICENSE).
+
